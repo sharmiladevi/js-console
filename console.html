@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Console Log Application</title>
+        <script type="text/javascript" src="jquery-latest.js"></script>
+        <script type="text/javascript" src="console.js"></script>
+        <link rel="stylesheet" href="console-style.css">
+        
+    </head>
+    <body onload="window.console = new Console();">
+            <div id="outputBlock">
+            </div>
+        <div>
+            <label style="width:10%;">></label>
+            <textarea autofocus rows="1" class="inputBlock" onkeyup="return window.console.handleKeyUp(event);"  id="inputText">            
+            </textarea>
+        </div>
+    </body>
+</html>
